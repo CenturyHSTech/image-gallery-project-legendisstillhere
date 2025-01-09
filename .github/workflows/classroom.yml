@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test HTML
-        setup-command: pip install webcode-tk file-clerk
+        setup-command: pip install webcode-tk file-clerk pytest
         command: pytest tests/test_html.py
         timeout: 10
         max-score: 3
@@ -27,7 +27,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test HTML Exceeds
-        setup-command: pip install webcode-tk file-clerk
+        setup-command: pip install webcode-tk file-clerk pytest
         command: pytest tests/test_html_exceeds.py
         timeout: 10
         max-score: 1
@@ -36,7 +36,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test CSS
-        setup-command: pip install webcode-tk file-clerk
+        setup-command: pip install webcode-tk file-clerk pytest
         command: pytest tests/test_css.py
         timeout: 10
         max-score: 3
@@ -45,7 +45,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test CSS Exceeds
-        setup-command: pip install webcode-tk file-clerk
+        setup-command: pip install webcode-tk file-clerk pytest
         command: pytest tests/test_css_exceeds.py
         timeout: 10
         max-score: 1
